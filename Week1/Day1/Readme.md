@@ -14,6 +14,7 @@ Computer Science
 
 ![이미지](./img/dia.png)
 
+
 3) 코드 출력 화면
    + i가 알맞게 출력되고 있는지 출력하여 확인하는 과정
   
