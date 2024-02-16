@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 int main(){
 	
+	srand(time(NULL));
 	printf("rule : 0은 가위, 1은 바위, 2은 보입니다. 3을 입력하면 종료됩니다.\n");
 	printf("\n");
 	
