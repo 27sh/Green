@@ -23,3 +23,5 @@
      b. scanf, printf
 
      c. 반복문
+
+     d. stdlib.h / time.h - rand, time
