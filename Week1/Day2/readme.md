@@ -40,3 +40,7 @@
     (b)
 
 ![이미지](./img/primeEx.PNG) 
+
+  6) 가위바위보 기초 코드(rsp.c)
+
+![이미지](./img/rsp.PNG)
