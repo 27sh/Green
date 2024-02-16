@@ -1,4 +1,5 @@
 # DAY 1
+24.2.15
 
 - coumputer Science
   
@@ -9,6 +10,7 @@
       a. 순서도를 작성하고 그에 기반하여 코드 작성하기. (1~100까지의 수 중에 홀수만 더하기) 
 
 # DAY 2
+24.2.16
 
 - coumputer Science
 
