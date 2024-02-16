@@ -31,8 +31,12 @@
 
 ![이미지](./img/PrimeNum.PNG) 
 
-  5) 해당 설계도(a)를 보고 코드 작성(primeEx.c)
+  5) 해당 설계도(a)를 보고 코드 작성(b)(primeEx.c)
+
+    (a)
 
 ![이미지](./img/prime.PNG) 
+
+    (b)
 
 ![이미지](./img/primeEx.PNG) 
