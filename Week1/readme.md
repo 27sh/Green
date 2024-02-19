@@ -25,3 +25,16 @@
      c. 반복문
 
      d. stdlib.h / time.h - rand, time
+
+# DAY 3
+24.2.19
+
+- computer Science
+
+  1. 논리회로설계
+
+    a. 가산기
+
+  2. C 프로그래밍
+
+    a. 배열
