@@ -54,3 +54,7 @@
   ![이미지](./img/loop.PNG)
 
   ![이미지](./img/loop2.PNG)
+
+- 포인터
+
+  a. heap / steak
