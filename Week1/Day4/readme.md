@@ -62,3 +62,7 @@
     int 와 void를 사용해 함수 만들어 사용 (function.c)
 
     ![이미지](./img/function.PNG)
+
+    사칙연산을 함수로 지정하여 main에 호출 (sum.c)
+
+    ![이미지](./img/sum.PNG)
