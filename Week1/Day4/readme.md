@@ -68,5 +68,7 @@
     ![이미지](./img/sum.PNG)
 
     swap 함수 (swap.c)
+ 
+       포인터
 
     ![이미지](./img/swap.PNG)
