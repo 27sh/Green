@@ -57,3 +57,8 @@
        실행 화면
 
     ![이미지](./img/ex2.PNG)
+
+  * 함수
+    int 와 void를 사용해 함수 만들어 사용 (function.c)
+
+    ![이미지](./img/function.PNG)
