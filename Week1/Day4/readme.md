@@ -66,3 +66,7 @@
     사칙연산을 함수로 지정하여 main에 호출 (sum.c)
 
     ![이미지](./img/sum.PNG)
+
+    swap 함수 (swap.c)
+
+    ![이미지](./img/swap.PNG)
