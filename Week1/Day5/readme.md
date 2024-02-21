@@ -18,3 +18,7 @@
       두 개의 클래스로 사칙연산 계산기 구현 (calculator.java / option.java)
 
     ![이미지](./img/clac.PNG)
+
+      중첩 for 문으로 구구단 구현 (gugu.java)
+
+    ![이미지](./img/gugu.PNG)
