@@ -61,3 +61,7 @@
   1. 구조체
  
 - Java Programing
+
+  1. 자바 프로그래밍 기초
+
+     a. public / private, getter / setter
