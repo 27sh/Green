@@ -22,3 +22,7 @@
       중첩 for 문으로 구구단 구현 (gugu.java)
 
     ![이미지](./img/gugu.PNG)
+
+      랜덤한 수를 이용하여 주사위 굴리기 (dice.java)
+
+    ![이미지](./img/dice.PNG)
