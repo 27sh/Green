@@ -1,6 +1,6 @@
 package day01;
 
-public class gugu {
+public class Gugu {
 
 	public static void main(String[] args) {
 		
