@@ -52,3 +52,12 @@
      b. 네트워크의 구조
 
      c. function 사용법
+
+# DAY 5
+24.2.21
+
+- computer Science
+
+  1. 구조체
+ 
+- Java Programing
