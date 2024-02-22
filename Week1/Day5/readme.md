@@ -26,3 +26,12 @@
       랜덤한 수를 이용하여 주사위 굴리기 (Dice.java)
 
     ![이미지](./img/dice.PNG)
+
+      로또 번호 뽑기1 (Rotto1.java)
+
+    ![이미지](./img/rotto1.PNG)
+
+      로또 번호 뽑기2 (Rotto2.java)
+
+    ![이미지](./img/rotto2.PNG)
+
