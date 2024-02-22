@@ -14,3 +14,7 @@
     ++ verify 매서드 따로 빼놓기 (Book3.java)
 
   ![이미지](./img/book3.PNG)
+
+  무한 배열 (Arr.java / Add.java) 
+  
+  ![이미지](./img/arr.PNG)
