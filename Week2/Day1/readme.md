@@ -10,3 +10,7 @@
     + 예약현황 UI 매서드를 따로 빼놓기 (Book2.java)
 
   ![이미지](./img/book2.PNG)
+
+    ++ verify 매서드 따로 빼놓기 (Book3.java)
+
+  ![이미지](./img/book3.PNG)
