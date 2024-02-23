@@ -18,3 +18,7 @@ Class 연습 2 (AcademyTest.java / Student.java)
 a 배열에 저장된 랜덤한 수를 홀짝을 나누어 B와 C배열에 저장 (RandArr.java)
 
 ![이미지](./img/rand.PNG)
+
+학생 정보 관리 (AcademyTest3.java / Student3.java)
+
+![이미지](./img/stdInfo.PNG)
