@@ -10,3 +10,7 @@ Class 연습 (Ex.java / F1.java / F2.java)
 Class 연습 2 (AcademyTest.java / Student.java)
 
 ![이미지](./img/student.PNG)
+
+  ++ 간략화 (AcademyTest2.java / Student2.java)
+
+![이미지](./img/student2.PNG)
