@@ -11,3 +11,8 @@
 ## Java Programing
 
   class 사용 연습 (getter / setter)
+
+# DAY 3
+24.2.26
+
+## Java Programing
