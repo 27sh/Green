@@ -15,6 +15,6 @@ static 개념 잡기(Car.java / CarMain.java)
 
 ![이미지](./img/bus2.PNG)
 
-2차원 배열 (arr2.java)
+2차원 배열 (Arr2.java)
 
 ![이미지](./img/arr2.PNG)
