@@ -28,3 +28,7 @@ static 개념 잡기(Car.java / CarMain.java)
           실패했을 경우
 
     ![이미지](./img/game2.PNG)
+
+  ++ 업그레이드 (Game2.java)
+
+  ![이미지](./img/game3.PNG)
