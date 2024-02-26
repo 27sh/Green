@@ -16,3 +16,7 @@
 24.2.26
 
 ## Java Programing
+
+  static의 정의
+
+  객체 간의 상호작용
