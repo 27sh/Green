@@ -3,6 +3,6 @@
 
 ## Java Programing
 
-static 개념 잡기
+static 개념 잡기(Car.java / CarMain.java)
 
 ![이미지](./img/static.PNG)
