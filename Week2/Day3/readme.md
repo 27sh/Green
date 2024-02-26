@@ -18,3 +18,13 @@ static 개념 잡기(Car.java / CarMain.java)
 2차원 배열 (Arr2.java)
 
 ![이미지](./img/arr2.PNG)
+
+  + 2차원 배열을 응용한 게임 제작 (Game.java)
+
+          성공했을 경우
+    
+    ![이미지](./img/game1.PNG)
+
+          실패했을 경우
+
+    ![이미지](./img/game2.PNG)
