@@ -32,6 +32,10 @@ public class Car {
 		return color;
 	}
 	
+	public static void f() {
+		System.out.println("f....");
+	}
+	
 	/*
 	public void printCarName() {
 		System.out.println(prodNo);
