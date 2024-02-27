@@ -25,3 +25,9 @@
 24.2.27
 
 ## Java Programing
+
+  class 연습
+
+  static 연습
+
+  class 간의 상호 작용 연습
