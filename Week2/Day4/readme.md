@@ -22,3 +22,11 @@ static 정의와 연습 (Student.java / StudentTest.java)
 class 간 상호작용 연습 (UnitTest.java / UnitA.java / UnitB.java)
 
 ![이미지](./img/unit.PNG)
+
+switch (Month.java)
+
+![이미지](./img/month.PNG)
+
+  +) (Score.java)
+
+  ![이미지](./img/score.PNG)
