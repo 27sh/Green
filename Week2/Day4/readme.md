@@ -14,3 +14,7 @@
 class 정의와 연습 (A.java / ATest.java)
 
 ![이미지](./img/a.PNG)
+
+static 정의와 연습 (Student.java / StudentTest.java)
+
+![이미지](./img/student.PNG)
