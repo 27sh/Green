@@ -30,3 +30,11 @@ switch (Month.java)
   +) (Score.java)
 
   ![이미지](./img/score.PNG)
+
+상속(Person.java)
+
+![이미지](./img/person.PNG)
+
+오버라이드(Animal.java)
+
+![이미지](./img/animal.PNG)
