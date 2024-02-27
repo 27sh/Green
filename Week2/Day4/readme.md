@@ -18,3 +18,7 @@ class 정의와 연습 (A.java / ATest.java)
 static 정의와 연습 (Student.java / StudentTest.java)
 
 ![이미지](./img/student.PNG)
+
+class 간 상호작용 연습 (UnitTest.java / UnitA.java / UnitB.java)
+
+![이미지](./img/unit.PNG)
