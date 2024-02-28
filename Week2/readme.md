@@ -38,3 +38,7 @@
 
 # DAY 5
 24.2.28
+
+## Java Programing
+
+객체의 정보 얻기
