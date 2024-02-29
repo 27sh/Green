@@ -6,9 +6,9 @@ public class ManageTell {
 		// TODO Auto-generated method stub
 		Member[] m = new Member[3];
 		
-		m[0] = new Member("홍길동", "010-1111-2222", "M");
-		m[1] = new Member("임꺽정", "010-1234-5678", "M");
-		m[2] = new Member("일지매", "010-9999-8888", "F");
+		m[0] = new Member("홍길동", "010-1111-2222", 'M');
+		m[1] = new Member("임꺽정", "010-1234-5678", 'M');
+		m[2] = new Member("일지매", "010-9999-8888", 'F');
 		
 		for(Member i : m) {
 			System.out.println(i.toString());
@@ -17,16 +17,17 @@ public class ManageTell {
 	}
 
 }
+
 package day06;
 
 public class Member {
 	private String name;
 	private String tell;
-	private String gender;
+	private char gender;
 	
 	Member(){}
 	
-	Member(String name, String tell, String gender){
+	Member(String name, String tell, char gender){
 		this.name = name;
 		this.tell = tell;
 		this.gender = gender;
@@ -44,10 +45,10 @@ public class Member {
 	public void setTell(String tell) {
 		this.tell = tell;
 	}
-	public String getGender() {
+	public char getGender() {
 		return gender;
 	}
-	public void setGender(String gender) {
+	public void setGender(char gender) {
 		this.gender = gender;
 	}
 	
