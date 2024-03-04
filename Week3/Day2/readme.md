@@ -12,3 +12,7 @@
 ![이미지](./img/ex1.PNG)
 
 ![이미지](./img/ex2.PNG)
+
+ArrayList<> 연습 (ListTest.java)
+
+![이미지](./img/list.PNG)
