@@ -9,3 +9,7 @@
 24.3.4
 
 ## Java Programing
+
+매서드 연습
+
+ArrayList<> 연습
