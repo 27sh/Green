@@ -6,3 +6,7 @@
 복습(Person.java)
 
 ![이미지](./img/person.PNG)
+
+  +) (Printer.java)
+
+  ![이미지](./img/printer.PNG)
