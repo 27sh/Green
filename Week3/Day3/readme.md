@@ -14,3 +14,7 @@
 Set 활용 (SetTest.java)
 
 ![이미지](./img/set.PNG)
+
+  +) (SetTest2.java)
+
+  ![이미지](./img/set2.PNG)
