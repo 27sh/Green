@@ -10,3 +10,7 @@
   +) (Printer.java)
 
   ![이미지](./img/printer.PNG)
+
+Set 활용 (SetTest.java)
+
+![이미지](./img/set.PNG)
