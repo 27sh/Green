@@ -22,7 +22,14 @@ public class MapTest {
 		Iterator<String> it = keys.iterator();
 		
 		while(it.hasNext()) {
-			System.out.println(it.next());
+			String k = it.next();
+			String v = map.get(k);
+			System.out.println("key : " +k+ ", value : " +v);
+		}
+		
+		System.out.println(map);
+		for(String s : keys) {
+			System.out.println(s + "=" +map.get(s));
 		}
 	}
 
