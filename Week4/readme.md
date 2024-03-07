@@ -6,3 +6,5 @@ sql 기초 문법
 Java 에서 DB 입력받기
 
   +) PreparedStatement 사용
+
+멤버 관리 프로그램
