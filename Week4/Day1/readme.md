@@ -14,4 +14,4 @@ java 에서 데이터 추가 하여 DB에 담기 (input.java)
 
     DBMS 확인
 
-    ![이미지](./img/result.PNG)
+![이미지](./img/result.PNG)
