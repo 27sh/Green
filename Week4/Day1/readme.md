@@ -15,3 +15,17 @@ java 에서 데이터 추가 하여 DB에 담기 (input.java)
     DBMS 확인
 
 ![이미지](./img/result.PNG)
+
+멤버 관리 프로그램
+
+(UI.java / Insert.java / Delete.java / Update.java / Select.java / ex1.sql)
+
+        java 실행 화면
+
+![이미지](./img/main.PNG)
+
+![이미지](./img/delete.PNG)
+
+        sql 화면
+
+![이미지](./img/picture.PNG)
