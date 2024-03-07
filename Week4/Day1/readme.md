@@ -9,4 +9,9 @@ sql 기초 문법 (ex1.sql)
 
 java 에서 데이터 추가 하여 DB에 담기 (input.java)
 
+    java 실행 화면
 ![이미지](./img/input.PNG)
+
+    DBMS 확인
+
+    ![이미지](./img/result.PNG)
