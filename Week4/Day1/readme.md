@@ -18,7 +18,7 @@ java 에서 데이터 추가 하여 DB에 담기 (input.java)
 
 멤버 관리 프로그램
 
-(UI.java / Insert.java / Delete.java / Update.java / Select.java / ex1.sql)
+(./manage/(UI.java, Insert.java, Delete.java, Update.java, Select.java, ex1.sql))
 
         java 실행 화면
 
