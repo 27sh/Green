@@ -29,3 +29,7 @@ Map 기초 - Key / Value
 24.3.6
 
 ## DB
+
+SQL 기초
+
+java DB 연동
