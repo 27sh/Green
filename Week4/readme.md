@@ -24,3 +24,7 @@ DB 연동 연습
  24.3.11
 
  ## DB
+
+sql 문법
+
+java : try/catch
