@@ -20,11 +20,16 @@ DB 연동 연습
 
 다양한 DBMS에서 작업한 것을 위해 class나누기
 
- # DAY 3
- 24.3.11
+# DAY 3
+24.3.11
 
- ## DB
+## DB
 
 sql 문법
 
 java : try/catch
+
+# DAY 4
+24.3.12
+
+## DB
