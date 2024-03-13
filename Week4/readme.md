@@ -33,3 +33,9 @@ java : try/catch
 24.3.12
 
 ## DB
+sql 문법
+
+# DAY 5
+24.3.13
+
+## DB
