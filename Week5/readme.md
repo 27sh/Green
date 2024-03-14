@@ -3,4 +3,6 @@
 
 ## DB
 
-join 연습 (manage.sql)
+join 연습
+
+sql 함수 연습
