@@ -1,0 +1,163 @@
+-- 제어 흐름 함수
+-- 1) if (수식, 참, 거짓)
+SELECT if(100 > 200, '참이군', '거짓이군');
+
+-- 2) IFNULL (수식1, 수식2)
+SELECT IFNULL(NULL, '널이군');
+SELECT IFNULL(100, '널이군');
+
+-- 3) NULLIF(수식1, 수식2)
+SELECT NULLIF(100, 100); -- 수식1과 수식2가 같으면 null 반환
+SELECT NULLIF(100, 50); -- 수식1과 수식2가 다르면 '수식1' 반환
+
+-- 4) CASE ~ WHEN ~ ELSE ~ END
+SELECT case 2
+		when 1 then '일'
+		when 5 then '오'
+		when 10 then '십'
+		ELSE '모름'
+	END;
+	
+-- 5) 문자열 함수 (중요!!!)
+-- 1) ASCII(아스키코드), CHAR(숫자)
+SELECT ASCII('A'); -- CHAR --> ASCII CODE VALUE
+SELECT CHAR(65); -- ASCII CODE VALUE -- > CHAR
+
+-- BIT_LENGTH(문자열), CHAR_LENGTH(문자열), LENGTH(문자열)
+SELECT BIT_LENGTH('abcd'); -- 4 * 8
+SELECT CHAR_LENGTH('ABC');
+SELECT LENGTH('ABC'); -- 영문 1byte, 4글자 4byte
+SELECT BIT_LENGTH('가나다');
+SELECT CHAR_LENGTH('가나다');
+SELECT LENGTH('가나다라'); -- 한글 3byte, 4글자12byte
+
+-- 3) CONCAT(문자열1, 문자열2, ...)
+SELECT CONCAT('AAA', 'BBB', 'CCC');
+
+-- CONCAT_WS(구분자, 문자열1, 문자열2, ...)
+SELECT CONCAT_WS('/', '2022', '01', '01');
+
+-- 4) ECT(위치, 문자열1, 문자열2, ...)
+SELECT ELT(2, '하나', '둘', '셋');
+-- FIELD(찾을 문자열, 문자열1, 문자열2, ...)
+SELECT FIELD('둘', '하나', '둘', '셋');
+-- FIND_IN_SET(찾을 문자열, 문자열 리스트)
+SELECT FIND_IN_SET('둘', '하나,둘,셋');
+-- INSTR(기준 문자열, 부분 문자열)
+SELECT INSTR('ABCDEF', 'CD');
+SELECT LOCATE('둘', '하나둘셋');
+
+-- 5) FORMAT(숫자, 소수점자리수)
+SELECT FORMAT(1235.1234567, 3); -- 반올림 수행함
+
+-- 6) BIN(숫자), HEX(숫자), OCT(숫자)
+SELECT BIN(8); -- 2진수
+SELECT HEX(46);
+SELECT OCT(46);
+
+-- 7) INSERT (기준 문자열 위치, 길이, 삽입할 문자열)
+SELECT INSERT ('ABCDEFGHI', 3, 4, '0000');
+
+-- 8) LEFT(문자열, 길이), RIGHT(문자열, 길이)
+SELECT LEFT('ABCDEFGHI', 3);
+SELECT RIGHT('ABCDEFGHI', 3);
+
+-- 9) UPPER(문자열), LOWER(문자열)
+SELECT UPPER('abcdEFGhif');
+SELECT LOWER('ABCDefgHIJ');
+
+-- 10) LPAD(문자열, 길이, 채울 문자열)
+SELECT LPAD('AAA', 5, '##');
+SELECT RPAD('AAA', 5, '##');
+
+-- 11) LTRIM(문자열), RTRIM(문자열) : 공백제거용
+SELECT LTRIM('        ABC');
+SELECT RTRIM('ABC         ')
+
+-- 12) TRIM(문자열), TRIM(방향 자를_문자열 FROM 문자열)
+SELECT TRIM('   이것이  '); -- 앞 뒤 공백 모두 지운다
+
+-- 13) REPEAT(문자열, 횟수)
+SELECT REPEAT('AAA', 3);
+
+-- 14) REPLACE(문자열, 원래 문자열, 바꿀 문자열)
+SELECT REPLACE ('This is mariaDB', 'This', '이것이');
+
+-- 15) REVERSE(문자열)
+SELECT REVERSE('MariaDB');
+
+-- 16) SPACE(길이)
+SELECT CONCAT('이것이', SPACE(10), 'MariaDB 다');
+
+-- 17) SUBSTRING(문자열, 시작위치, 길이)
+SELECT SUBSTRING('대한민국만세', 3, 2);
+
+-- 날짜 시간 함수
+-- 1) ADDDATE(날짜, 차이), SUBDATE(날짜, 차이)
+SELECT ADDDATE('2022-01-01', INTERVAL 31 DAY);
+SELECT ADDDATE('2022-02-01', INTERVAL 1 MONTH);
+SELECT SUBDATE('2022-02-01', INTERVAL 1 MONTH);
+SELECT SUBDATE('2022-01-01', INTERVAL 31 DAY);
+
+SELECT DATE_ADD('2022-01-01', INTERVAL 31 DAY);
+SELECT DATE_SUB('2022-01-01', INTERVAL 31 DAY);
+
+
+-- ADDTIME(날짜/시간, 시간), SUBTIME(날짜/시간, 시간)
+SELECT ADDTIME('2022-01-01 23:59:59', '1:1:1');
+SELECT SUBTIME('2022-01-01 23:59:59', '1:1:1');
+
+-- CURDATE(), CURTIME(), NOW(), SYSDATE()
+SELECT CURDATE();
+SELECT CURRENT_DATE();
+SELECT CURTIME();
+SELECT CURRENT_TIME();
+SELECT CURRENT_TIME;
+SELECT NOW();
+SELECT SYSDATE();
+SELECT LOCALTIME();
+SELECT LOCALTIMESTAMP();
+
+-- DATE(), TIME()
+SELECT DATE(NOW());
+SELECT TIME(NOW());
+
+-- YEAR(날짜), MONTH(날짜), DAY(날짜)
+-- HOUR(시간), MINUTE(시간), SECOND(시간), MICROSECOND(시간)
+
+SELECT YEAR(NOW());
+SELECT MONTH(CURRENT_DATE());
+SELECT DAY(NOW());
+SELECT DAYOFMONTH(CURRENT_DATE());
+SELECT HOUR(CURTIME());
+SELECT MINUTE(CURTIME());
+SELECT SECOND(CURRENT_TIME);
+SELECT MICROSECOND(CURRENT_TIME());
+
+-- DATEDIFF(날짜1, 날짜2), TIMEDIFF(날짜1 or 시간1, 날짜2 or 시간2)
+SELECT DATEDIFF('2022-01-01', NOW());
+SELECT TIMEDIFF('23:23:59', '12:11:10');
+
+-- DAYOFWEEK(날짜), MONTHNAME(), DAYOFYEAR(날짜)
+SELECT DAYOFWEEK('2024-03-16');
+SELECT MONTHNAME(CURDATE());
+SELECT DAYOFYEAR('2024-03-16');
+
+-- LAST_DAY(날짜)
+SELECT LAST_DAY('2024-03-14');
+
+-- MAKEDATE(연도, 정수)
+SELECT MAKEDATE(2024, 74);
+
+-- PERIOD_ADD(연월, 개월수), PERIOD_DIFF(연월1, 연월2)
+SELECT PERIOD_ADD(202201, 11);
+SELECT PERIOD_DIFF(202201, 201812);
+
+-- QUARTER(날짜) : 1~4분기
+SELECT QUARTER('2024-01-15');
+
+-- TIME_TO_SEC(시간)
+SELECT TIME_TO_SEC('01:00:00');
+
+
+
