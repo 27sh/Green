@@ -5,6 +5,8 @@
 
 sql 매서드 (ex.sql)
 
+      순위 함수 / pivot / trigger
+
 join 연습 (std.sql)
 
 java Date 함수 연습 (DateEx.java)
