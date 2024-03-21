@@ -4,3 +4,6 @@
 ## HTML / CSS
 
 style 연습 
+
+# DAY 2
+24.3.22
