@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:visited{
+
+        }
+        p:hover{
+            color: red;
+        }
+        p:active{
+            color: green;
+        }
+        input:focus{
+            color: red;
+            background-color: yellow;
+        }
+        input:checked + label{
+            color: red;
+        }
+        input:disabled{
+            background-color: greenyellow;
+        }
+        button:disabled{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <button disabled>버튼</button><br>
+    <input type="text" value="aaaaaa" disabled><br>
+    <input type="text" disabled><br>
+    <input type="checkbox" id="chk" name="chk" checked>
+    <label for="chk">체크박스</label><br>
+    <a href="#3"> link 1</a> <br>
+    <a href="#"> link 2</a>
+    <hr>
+    <p>동적 가상 클래스 선택자 : hover</p>
+    <p>동적 가상 클래스 선택자 :active</p>
+</body>
+</html>
