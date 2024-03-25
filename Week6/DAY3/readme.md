@@ -12,3 +12,9 @@ DiaryWriter.java - 일기 작성 / 저장
 DiaryContents.java - 목록 열람
 
 PrintDiary.java - 일기 출력 / 삭제
+
+## HTML / CSS
+
+    flex 연습(flex00.html)
+
+![이미지](./img/flex.PNG)
