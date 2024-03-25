@@ -24,3 +24,7 @@ Q.txt 파일을 보고 프로그램 만들기 >> 일기장 프로그램 제작 (
     flex 연습(flex00.html)
 
 ![이미지](./img/flex.PNG)
+
+    flex 연습 2 (flex01.html)
+
+![이미지](./img/flex2.PNG)
