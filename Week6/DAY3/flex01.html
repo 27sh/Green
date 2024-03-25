@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    header, footer{
+        width: 800px;
+        height: 200px;
+        border: 1px solid black;
+        box-sizing: border-box;
+    }
+    #box{
+        width: 800px;
+        display: flex;
+    }
+    #container{
+        width: 400px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .section{
+        width: 100px;
+        height: 350px;
+        border: 1px solid black;
+        box-sizing: border-box;
+    }
+    .section2{
+        width: 400px;
+        height: 400px;
+        border: 1px solid black;
+        box-sizing: border-box;
+    }
+
+</style>
+<body>
+    <header> header </header>
+    <div id="box">
+        <div id="container" class="section2">
+            <div class="section">2-1</div>
+            <div class="section">2-2</div>
+            <div class="section">2-3</div>
+        </div>
+        <div class="section2">div2</div>
+    </div>
+    <footer> footer </footer>
+    
+</body>
+</html>
