@@ -22,3 +22,9 @@ gridEx02.html
 positionEx.html
 
 ![이미지](./img/position.PNG)
+
+    img 연습   
+
+float-img.html
+
+![이미지](./img/choco.PNG)
