@@ -22,3 +22,8 @@ FileReader를 이용한 일기장 프로그램
 ## HTML / CSS
 
 flex 연습
+
+# DAY 4
+24.3.26
+
+## Java Programing
