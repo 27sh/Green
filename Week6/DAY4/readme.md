@@ -4,3 +4,11 @@
 ## Java Programing
 
 내부 클래스 연습
+
+## HTML / CSS
+
+    grid 연습
+
+  ![이미지](./img/grid1.PNG)
+
+  ![이미지](./img/grid2.PNG)
