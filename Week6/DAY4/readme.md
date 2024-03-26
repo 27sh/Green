@@ -16,3 +16,9 @@ gridEx01.html
 gridEx02.html
 
   ![이미지](./img/grid2.PNG)
+
+      position 연습
+
+positionEx.html
+
+![이미지](./img/position.PNG)
