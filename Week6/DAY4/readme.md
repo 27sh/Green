@@ -10,6 +10,7 @@
     grid 연습
 
 gridEx01.html
+
   ![이미지](./img/grid1.PNG)
 
 gridEx02.html
