@@ -39,4 +39,6 @@ position 연습
 # DAY 5
 24.3.27
 
-## Java Programing
+## HTML / CSS
+
+홈페이지 화면 구현
