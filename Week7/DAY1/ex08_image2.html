@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            padding: 20px;
+            border-bottom: solid 1px black;
+        }
+        img{
+            max-width: 100%;
+        }
+        nav{
+            width: 20%;
+            float: left;
+            padding: 15px;
+        }
+        nav li{
+            padding-top: 10px;
+        }
+        section{
+            width: 80%;
+            float: left;
+            padding: 20px;
+        }
+        @media only screen and (max-width: 768px){
+            /*스마트폰*/
+            nav{ width: 100%;}
+            section{width: 100%;}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>포토갤러리</h2>
+    </header>
+    <nav>
+        <ul>
+            <li>작품사진1</li>
+            <li>작품사진2</li>
+            <li>작품사진3</li>
+            <li>작품사진4</li>
+        </ul>
+    </nav>
+    <section>
+        <h3>작품사진 1</h3>
+        <div>
+            <img src="/img/image2.jpg" alt="">
+        </div>
+    </section>
+</body>
+</html>
