@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS 연습</h1>
+
+    <hr>
+
+    <div>
+        <button id="btn" onclick="f()">실행</button>
+        <button id="btn2" onclick="f()">실행2</button>
+    </div>
+    <div id="demo"></div>
+
+    <script>
+        const btn = document.getElementById("btn");
+        const btn2 = document.querySelector("#btn2");
+
+        btn.addEventListener("click", f2);
+        btn2.addEventListener("click", function(){
+            let answer = prompt("Do you like JS?");
+            document.querySelector("#demo").innerHTML = answer
+        });
+
+        console.log("Hello js!!!");
+
+        function f(){
+            alert("f함수 실행;")
+        }
+
+        function f2(){
+            document.write("<h1>Hello JS!!!</h1>");
+        }
+    </script>
+</body>
+</html>
