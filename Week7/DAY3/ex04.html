@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <style>
+        body {
+            align-items: center;
+            justify-content: space-around
+        }
+        .container {
+            display: flex;
+            margin: 50px;
+            align-items: center;
+            justify-content: space-around;
+        }
+        #btn {
+            background-color: rgb(218, 64, 64);
+            color: white;
+        }
+        img{
+            width: 60%;
+            height: 60%;
+        }
+        input{
+            width: 60%;
+            height: 50%;
+        }
+        button{
+            width: 10%;
+        }
+    </style>
+</head>
+<body>
+    <h2>가위 바위 보 게임</h2>
+
+    <div class="container">
+        <div id="you">
+            <h3>YOU</h3>
+            <img id="youImg" src="/img/Q.png" alt="Question Mark">
+            <p id="youText">??</p>
+        </div>
+
+        <div id="com">
+            <h3>COM</h3>
+            <img id="comImg" src="/img/Q.png" alt="Question Mark">
+            <p id="comText">??</p>
+        </div>
+    </div>
+
+    <input type="text" id="input" size="30" placeholder="Enter a number (1-3)">
+    <button id="btn" onclick="f()">Play</button>
+
+    <script>
+        function f() {
+            const input = document.getElementById("input");
+            const userChoice = parseInt(input.value); // Convert input value to an integer
+
+            // Generate a random number for computer's choice (1-3)
+            const computerChoice = Math.floor(Math.random() * 3) + 1;
+
+            // Update images and text based on user and computer choices
+            const youImg = document.getElementById("youImg");
+            const youText = document.getElementById("youText");
+            const comImg = document.getElementById("comImg");
+            const comText = document.getElementById("comText");
+
+            // Update user's choice
+            if (userChoice === 1) {
+                youImg.src = "/img/scissors.png";
+                youText.textContent = "Scissors";
+            } else if (userChoice === 2) {
+                youImg.src = "/img/rock.png";
+                youText.textContent = "Rock";
+            } else if (userChoice === 3) {
+                youImg.src = "/img/paper.png";
+                youText.textContent = "Paper";
+            } else {
+                alert("Please enter a valid number (1-3)");
+                return;
+            }
+
+            // Update computer's choice
+            if (computerChoice === 1) {
+                comImg.src = "/img/scissors.png";
+                comText.textContent = "Scissors";
+            } else if (computerChoice === 2) {
+                comImg.src = "/img/rock.png";
+                comText.textContent = "Rock";
+            } else if (computerChoice === 3) {
+                comImg.src = "/img/paper.png";
+                comText.textContent = "Paper";
+            }
+
+            // Determine the winner
+            if (userChoice === computerChoice) {
+                alert("It's a tie!");
+            } else if ((userChoice === 1 && computerChoice === 3) ||
+                    (userChoice === 2 && computerChoice === 1) ||
+                    (userChoice === 3 && computerChoice === 2)) {
+                alert("You win!");
+            } else {
+                alert("Computer wins!");
+            }
+        }
+    </script>
+</body>
+</html>
