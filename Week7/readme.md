@@ -10,3 +10,7 @@ copyOf
 
 # DAY 3
 24.4.01
+
+## JS
+
+HTML에서 JS 사용
