@@ -14,3 +14,6 @@ copyOf
 ## JS
 
 HTML에서 JS 사용
+
+# DAY 4
+24.4.02
