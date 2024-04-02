@@ -23,3 +23,6 @@ HTML에서 JS 사용
 람다 함수
 
 display 연습
+
+# DAY 5
+24.4.03
