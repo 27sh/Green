@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid black;
+            width: 300px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" id="inputText" oninput="copyAndStar()">
+        <button id="btn" onclick="chgBtn()">복사하기</button>
+    </div>
+    <div>
+        <p id="copyText"></p>
+    </div>
+    <div>
+        <p id="starText"></p>
+    </div>
+
+    <script>
+        function copyAndStar(){
+            const text = document.getElementById("inputText").value;
+            document.querySelector("#copyText").innerHTML = text;
+            let star = "";
+            for(let i = 0; i < text.length; i++){
+                star += "*";
+            }
+            document.querySelector("#starText").innerHTML = star;
+        }
+
+        function chgBtn(){
+            document.querySelector("#btn").innerHTML = "1234";
+        }
+    </script>
+</body>
+</html>
