@@ -1,6 +1,8 @@
 # DAY 5
 24.4.03
 
+## JS 
+
 D-Day 계산기 (date.html)
 
 ![이미지](./img/date.PNG)
