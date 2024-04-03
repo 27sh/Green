@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 500px;
+            
+            position: relative;
+
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        div{
+            border: 1px solid black;
+        }
+        #bar{
+            background-color: black;
+            color: white;
+        }
+        .date{
+            padding: 10px;
+
+            display: flex;
+            
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div id="head" style="text-align: center;">
+        <p>우리 만난지</p>
+        <p id="startDay">startDay~</p>
+        <h1 id="today">40일</h1>
+    </div>
+    <div id="main">
+        <div id="bar">
+            <p>기념일 계산</p>
+        </div>
+        <div class="date">
+            <h3>100일</h3>
+            <p id="dDay100"></p>
+        </div>
+        <div class="date">
+            <h3>200일</h3>
+            <p id="dDay200"></p>
+        </div>
+        <div class="date">
+            <h3>1년</h3>
+            <p id="dDay365"></p>
+        </div>
+        <div class="date">
+            <h3>500일</h3>
+            <p id="dDay500"></p>
+        </div>
+    </div>
+
+    <script>
+        let date = prompt("날짜를 입력해주세요", "yyyy-MM-dd");
+
+        let today = new Date();
+        let startDay = new Date(date);
+        let year = startDay.getFullYear();
+        let month = startDay.getMonth() + 1;
+        let day = startDay.getDate();
+
+        document.querySelector("#startDay").innerHTML = year+ "년" +month +"월" +day +"일 ~";
+
+        let startM = startDay.getTime();
+        let todayM = today.getTime();
+        let calcDay = 24 * 60 * 60 * 1000;
+        let passedDay = Math.round((todayM - startM) / calcDay);
+        document.querySelector("#today").innerHTML = passedDay +"일";
+
+        calcDate(100);
+        calcDate(200);
+        calcDate(365);
+        calcDate(500);
+
+        function calcDate(number){
+            let futureM = startM + (calcDay * number);
+            let dDay = Math.round((futureM - todayM) / calcDay);
+            if(number == 365){
+                year = futureM.getFullYear() + 1;
+                month = futureM.getMonth() + 1;
+                day = futureM.getDate();
+            }
+            else{
+                let futureDate = new Date(futureM);
+                year = futureDate.getFullYear();
+                month = futureDate.getMonth() + 1;
+                day = futureDate.getDate();
+            }
+
+            document.querySelector("#dDay" +number).innerHTML = year+ "년" +month +"월" +day +"일";
+        }
+
+    </script>
+</body>
+</html>
