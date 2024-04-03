@@ -14,3 +14,9 @@ class명 추가 (ex01.html)
 text 출력 (copy.html)
 
 ![이미지](./img/copy.PNG)
+
+계산기 (calc.html)
+
+![이미지](./img/calc.PNG)
+
+출처 : https://blog.cordelia273.space/32
