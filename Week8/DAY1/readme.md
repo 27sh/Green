@@ -11,4 +11,4 @@ form 작성 (ex01.html)
 
 별점 주기 (ex02.html)
 
-![이미지](./img/02.html)
+![이미지](./img/02.PNG)
