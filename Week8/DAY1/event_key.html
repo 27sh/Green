@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="message">
+    <div id="code"></div>
+    <hr>
+    <input type="tel" onkeydown="return checkPhoneKey(event.key)" placeholder="Phone, please">
+
+    <script>
+        const textBox = document.getElementById("message");
+        const code = document.getElementById("code");
+
+        textBox.addEventListener("keydown", (event) => {
+            console.log('key=$(event.key), code=$(event.code), keycode=$(event.keycode)');
+            code.innerHTML = key=$(event.key), code=$(event.code), keycode=$(event.keycode);
+        });
+
+        function checkPhoneKey(key){
+            return (key >= "0" && key <= "9" || ['+', (','), '-', 'ArrowLeft', 'ArrowRight', 'Delete', 'BackSpace']).includes(key);
+        }
+    </script>
+</body>
+</html>
