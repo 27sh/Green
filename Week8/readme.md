@@ -4,3 +4,5 @@
 ## JS
 
 event 처리 연습 
+
+JSON 알기
