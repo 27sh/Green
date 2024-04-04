@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1px" id="table">
+        <thead>
+            <tr>
+                <th>번호</th> <th>이름</th> <th>나이</th> <th>주소</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+
+    <script>
+        const slist = '[{"sno":1,"name":"홍길동","age":24,"address":"서울"},{"sno":2,"name":"마길동","age":24,"address":"부산"},{"sno":3,"name":"고길동","age":24,"address":"울산"}]';
+
+        /*
+        const list = [
+            {sno: 1, name: "홍길동", age: 24, address: "서울"},
+            {sno: 2, name: "마길동", age: 24, address: "부산"},
+            {sno: 3, name: "고길동", age: 24, address: "울산"}
+        ]
+        */
+
+        /*
+        function f(){
+            //console.log(list);
+            //let str_list = JSON.stringify(list);
+            //console.log(str_list);
+            let objs = JSON.parse(slist);
+            console.log(objs);
+            console.log(objs.length);
+
+            
+        objs.array.forEach(obj => {
+            console.log(obj.sno + ", " +obj.name + ", " +obj.age+", " +obj.address);
+            
+        });
+        
+        return false;
+    }
+
+        f();
+        */
+
+    function inputData(){
+        let arrSno = new Array();
+        let arrName = new Array();
+        let arrAge = new Array();
+        let arrAddr = new Array();
+
+        let json = JSON.parse(slist);
+
+        for(let i=0;i<json.length; i++){
+            arrSno[i] = json[i].sno;
+            arrName[i] = json[i].name;
+            arrAge[i] = json[i].age;
+            arrAddr[i] = json[i].address;
+        }
+
+        let table = document.getElementById("table");
+
+        for(let i =0; i<arrSno.length;i++){
+            let tr = document.createElement("tr");
+            
+            let td1 = document.createElement("td");
+            td1.appendChild(document.createTextNode(arrSno[i] + ""));
+
+            let td2 = document.createElement("td");
+            td2.appendChild(document.createTextNode(arrName[i] + ""));
+
+            let td3 = document.createElement("td");
+            td3.appendChild(document.createTextNode(arrAge[i] + ""));
+
+            let td4 = document.createElement("td");
+            td4.appendChild(document.createTextNode(arrAddr[i] + ""));
+
+            tr.appendChild(td1);
+            tr.appendChild(td2);
+            tr.appendChild(td3);
+            tr.appendChild(td4);
+
+            table.appendChild(tr);
+        }
+    }
+
+    inputData();
+    </script>
+</body>
+</html>
