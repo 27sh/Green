@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul, li{
+            list-style-type: none;
+        }
+        #wrap{
+
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <ul>
+            <li><input type="checkbox" class="chkAll"></li>
+            <li><input type="checkbox" class="chk"></li>
+            <li><input type="checkbox" class="chk"></li>
+            <li><input type="checkbox" class="chk"></li>
+            <li><input type="checkbox" class="chk"></li>
+            <li><input type="checkbox" class="chk"></li>
+            <li><input type="checkbox" class="chk"></li>
+        </ul>
+    </div>
+
+    <script>
+        const chkAll = document.querySelector(".chkAll");
+        const chks = document.querySelectorAll(".chk");
+
+        chkAll.addEventListener("click", () => {
+            chks.forEach(Element => {
+                Element.checked = chkAll.checked;
+            });
+        });
+    </script>
+</body>
+</html>
