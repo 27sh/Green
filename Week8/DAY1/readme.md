@@ -12,3 +12,7 @@ form 작성 (ex01.html)
 별점 주기 (ex02.html)
 
 ![이미지](./img/02.PNG)
+
+JSON 익히기 (ex03.html)
+
+![이미지](./img/03.PNG)
