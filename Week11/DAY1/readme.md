@@ -3,4 +3,4 @@
 
 spring boot 
 
-  - mapper 사용 연습
+  - mybatis : mapper 사용 연습
