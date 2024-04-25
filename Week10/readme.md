@@ -7,8 +7,12 @@
 # DAY 3
 24.4.22
 
+- baties
+
 # DAY 4
 24.4.23
 
 # DAY 5
 24.4.24
+
+- spring boot
