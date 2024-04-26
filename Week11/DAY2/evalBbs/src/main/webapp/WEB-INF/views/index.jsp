@@ -10,6 +10,6 @@
     <h1>Index Page</h1>
     <hr>
     <a href="list">목록보기</a><br>
-    <a href="write">글 작성하기</a><br>
+    <a href="writeForm">글 작성하기</a><br>
 </body>
 </html>
