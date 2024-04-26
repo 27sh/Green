@@ -17,7 +17,7 @@
             <p>내용 : ${dto.content}</p>
         </div>
 
-    <a href="detail?bno=${dto.bno}">삭제하기</a><br>
+    <a href="delete?bno=${dto.bno}">삭제하기</a><br>
     <a href="list">목록보기</a><br>
 </body>
 </html>

@@ -48,4 +48,12 @@ public class EvalBbsController {
 		
 		return "detail";
 	}
+	
+	@GetMapping("/delete")
+	public String delete(@RequestParam("bno") String bno, Model model) {
+		
+		dao.delete(bno);
+		
+		return "redirect:list";
+	}
 }

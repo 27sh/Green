@@ -31,3 +31,13 @@
 detail page
 
 ![이미지](./img/detail.PNG)
+
+### delete 삭제 기능 구현
+
+상세 페이지 내 삭제 버튼
+
+![이미지](./img/delete.PNG)
+
+삭제 후 리스트 화면
+
+![이미지](./img/deleteList.PNG)

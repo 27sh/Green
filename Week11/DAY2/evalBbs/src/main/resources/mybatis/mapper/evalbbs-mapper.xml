@@ -16,4 +16,8 @@
 	<select id="getDto">
 		SELECT * FROM evalbbs WHERE bno = #{bno}
 	</select>
+	
+	<delete id="delete">
+		DELETE FROM evalbbs WHERE bno = #{bno}
+	</delete>
   </mapper>
