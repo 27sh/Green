@@ -1,5 +1,8 @@
 package com.green.evalBbs.dao;
 
-public interface IEvalBbsDao {
+import org.apache.ibatis.annotations.Mapper;
 
+@Mapper
+public interface IEvalBbsDao {
+	
 }
