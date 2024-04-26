@@ -10,8 +10,18 @@
 <body>
     <h1>List Page</h1>
     <hr>
+    <table cellpadding="0" cellspacing="0" border="1">
+    <tr>
+        <th>번호</th><th>제목</th><th>작성자</th><th>작성일자</th>
+    </tr>
     <c:forEach var="dto" items="${list}">
-        ${dto.bno} - ${dto.title}, ${dto.writer}, ${dto.regdate} : ${dto.content} <br>
+        <tr>
+            <td>${dto.bno}</td>
+            <td><a href="detail?bno=${dto.bno}">${dto.title}</a></td>
+            <td>${dto.writer}</td>
+            <td>${dto.regdate}</td>
+        </tr>
     </c:forEach>
+    </table>
 </body>
 </html>

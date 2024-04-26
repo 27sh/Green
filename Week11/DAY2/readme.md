@@ -21,3 +21,13 @@
 입력 후 리스트 페이지로 이동
 
 ![이미지](./img/writeList.PNG)
+
+### detail 상세 페이지 구현
+
+목록에서 제목 클릭시 detail.jsp로 이동하도록 설정
+
+![이미지](./img/detailList.PNG)
+
+detail page
+
+![이미지](./img/detail.PNG)

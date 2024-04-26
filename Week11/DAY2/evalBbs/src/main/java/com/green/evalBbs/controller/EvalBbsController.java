@@ -6,6 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.green.evalBbs.dao.IEvalBbsDao;
 import com.green.evalBbs.dto.EvalBbsDto;
@@ -38,5 +39,13 @@ public class EvalBbsController {
 		dao.write(dto);
 		
 		return "redirect:list";
+	}
+	
+	@GetMapping("/detail")
+	public String detail(@RequestParam("bno") String bno, Model model) {
+		
+		model.addAttribute("dto", dao.getDto(bno));
+		
+		return "detail";
 	}
 }
