@@ -1,0 +1,52 @@
+1. Group : com.green
+2. Artifact : evalBbs
+3. pakage : com.green.evalBbs
+4. Java Version : 11
+5. Spring Version : 2.7.4
+6. 의존성 주입 
+   1) Spring Web
+   2) Lombok
+   3) MariaDB Driver
+   4) MyBatis Framework
+
+7. 테이블 명 : evalbbs
+8. 컬럼명 : 
+   1) bno (게시물번호) : 정수
+   2) title (게시물제목) : 문자열, 50글자 이내
+   3) content (게시물 내용) : 문자열, 1000글자 이내
+   4) writer (작성자) : 문자열, 20글자 이내
+   5) regdate(작성일자) : 날짜
+
+9. 컨트롤러 명 : EvalBbsController
+10. 패키지
+   1) com.green.evalBbs.controller
+   2) com.green.evalBbs.dao
+   3) com.green.evalBbs.dto
+11. 매퍼 명 : evalbbs-mapper.xml
+12. 매퍼 인터페이스 명 : IEvalBbsDao
+13. DTO 명 : EvalBbsDto
+14. View 파일 명
+   1) list.jsp
+   2) wrtieForm.jsp
+   3) detail.jsp
+   4) index.jsp
+
+15. 네비게이션
+   1) index 페이지에서 '목록보기', '글 작성하기' 링크를 제공한다.
+   2) 목록보기 페이지에서 '글 작성하기' 링크를 제공한다.
+   3) 글작성/삭제 후 '목록보기' 페이지로 이동한다.
+   4) 목록에서 '제목'을 클릭하면 '상세보기' 페이지로 이동한다.
+   5) 상세페이지에서 삭제링크를 클릭하여 게시글을 삭제한다.
+
+16. 작업과정에서 초기 설정, 목록보기, 등록, 삭제 각 단계 마다 커밋하기
+17. 로컬 저장소의 저장결과를 원격저장소에 동기화시키기.
+18. 16, 17번에 대한 작업결과를 캡처하여 제출하기
+19. 작업 소스파일과 캡처 이미지, 깃허브 주소를 압축하여 제출하기
+   (본인이름.zip)
+ 
+
+
+
+
+
+
