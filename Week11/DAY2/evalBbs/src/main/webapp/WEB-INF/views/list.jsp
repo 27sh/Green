@@ -5,12 +5,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Index</title>
+<title>List</title>
 </head>
 <body>
-    <h1>Command 객체 연습 Page</h1>
+    <h1>List Page</h1>
     <hr>
-    ${simpleBbsDto.title} <br>
-    <a href="list">목록보기</a><br>
+    <c:forEach var="dto" items="${list}">
+        ${dto.bno} - ${dto.title}, ${dto.writer}, ${dto.regdate} : ${dto.content} <br>
+    </c:forEach>
 </body>
 </html>

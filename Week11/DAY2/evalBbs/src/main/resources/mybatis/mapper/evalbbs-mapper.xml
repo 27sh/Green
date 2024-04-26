@@ -4,5 +4,7 @@
   "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
   
   <mapper namespace="com.green.evalBbs.dao.IEvalBbsDao">
-
+	<select id="getList" resultType="com.green.evalBbs.dto.EvalBbsDto">
+		SELECT * FROM evalbbs
+	</select>
   </mapper>
