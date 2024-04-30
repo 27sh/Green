@@ -1,4 +1,4 @@
-package com.green.junitExam.domain;
+package com.green.junitExam.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
