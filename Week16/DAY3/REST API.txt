@@ -1,0 +1,53 @@
+REST API
+(Reresentational state Transfer Application Programming Interface)
+
+웹 서비스 아키텍처(구조) 중 하나
+
+자원 - 메소드
+(Resource - Method)
+
+자원의 경로를 규칙에 따라 작성함
+
+자원의 획득 생성 변경 등에 대한 메소드를 구분하여 명시함
+
+HTTP 메소드
+GET : 클라이언트가 서버에 리소스를 요청할 때 사용 (획득)
+POST : 클라이언트가 서버에 리소스를 등록할 때 사용 (생성)
+PUT : 클라이언트가 서버에 리소스를 등록할 떄 사용 (변경)
+DELETE : 클라이언트가 서버의 리소스를 삭제할 때 사용 (삭제)
+
+REST API의 특성 : 무상태성(stateless), 서버에 상태 정보를 보관하지 않는다
+>> 서버는 클라이어트가 보낸 요청에 대해 세션이나 쿠키 정보를 별도로 보관하지 않는다
+
+--------------------------------------------------
+REST URL 설계 규칙
+
+URL의 마지막에는 '/'를 포함하지 않는다.
+- http://localhost.com/product (O)
+- http://localhost.com/product/ (X)
+
+언더바(_)는 사용하지 않느낟. 하이픈(-)을 사용한다.
+- http://localhost.com/provider-company-name (O)
+- http://localhost.com/provider_company_name (X)
+
+행위(동사)가 아닌 결과(명사)를 사용한다.
+- http://localhost.com/product/123 (O)
+- http://localhost.com/delete-product/123 (X)
+
+소문자로 작성한다.
+>> 일부 웹 서버의 운영체제는 리소스 경로 부분의 대소문자를 다른 문자로 인식한다.
+     RFC3986은 URL 문법 형식을 정의하고 있는데, 호스트의 구성요소를 제외하고
+     URL의 대소문자를 구분해서 정의하고 있다.
+
+파일의 확장자는 포함하지 않는다.
+
+REST 아키텍처를 구현하는 웹서비스를 'RESTful하다'라고 표현한다.
+
+정리 : REST란 주고 받는 자원(Resource)에 이름을 규정하고 URI에 명시해 HTTP 메소드
+         (GET, POST, PUT, DELETE)를 통해 해당 자원의 상태를 주고받는 것이다.
+
+
+
+
+
+
