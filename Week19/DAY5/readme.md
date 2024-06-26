@@ -17,3 +17,9 @@ flutter 연습
 ![이미지](./img/recipe2.PNG)
 
     참고 https://github.com/flutter-coder/flutter-book/tree/master/flutter_recipe
+
+- profile 화면
+
+![이미지](./img/profile.PNG)
+
+    참고 https://github.com/flutter-coder/flutter-book/tree/master/flutter_profile
