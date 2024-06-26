@@ -6,3 +6,8 @@
 - 스레드
 
 - flutter
+
+# DAY 5
+24.06.26
+
+flutter 연습
